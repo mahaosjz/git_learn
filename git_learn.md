@@ -42,3 +42,6 @@ commit后，`git diff HEAD -- file`查看工作区和版本库最新版本的区
 4. 创建+切换分支：`git checkout -b <name>`
 5. 合并某分支到当前分支：`git merge <name>`
 6. 删除分支：`git branch -d <name>`
+### 解决冲突
+1. git无法自动合并分支时，必须首先解决冲突，解决冲突之后，在提交，合并完成
+2. `git log --graph --pretty="oneline" --abbrev-commit`查看分支合并图
