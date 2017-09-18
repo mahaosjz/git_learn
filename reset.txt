@@ -1,3 +1,4 @@
 git is a distributed version control system.
 git is free software distributed under tht GPL
 checkout before git add 
+pull from git_hub
