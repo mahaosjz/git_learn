@@ -9,7 +9,7 @@
 1. `git diff` 是工作区和暂存区的比较
 2. `git diff --cached` 暂存区和分支的比较
 3. `git add`命令后，工作区的第一次修改放入暂存区，准备提交
-4. `git commi`t负责把暂存区的修改提交到版本库
+4. `git commit`负责把暂存区的修改提交到版本库
 ## 管理修改
 #### git跟踪管理的是修改，并不是文件
 commit后，`git diff HEAD -- file`查看工作区和版本库最新版本的区别
@@ -30,7 +30,15 @@ commit后，`git diff HEAD -- file`查看工作区和版本库最新版本的区
 1. 查看当前所有的远程仓库`git remote -v`
 2. 解除其中一个远程仓库`git remote rm <远程库名>`
 ## 添加远程库
-1. `git remote add origin mahaosjz@gmail.com:`git@github.com:mahaosjz/git_learn.git`,下载后可以把本地库的内容推送到远程库上
+1. `git remote add origin mahaosjz@gmail.com:git@github.com:mahaosjz/git_learn.git`,下载后可以把本地库的内容推送到远程库上
 2. `git push -u origin master`把当前分支推送到远程，-u参数 第一次推送时把本地的master分支推送到远程新的master分支，并与之关联。
 ## 远程克隆
 1. 要克隆一个仓库，首先知道仓库的地址，然后`git clone 远程地址`
+## 分支管理
+### 创建与合并分支
+1. 查看分支：`git branch`
+2. 创建分支：`git branch <name>`
+3. 切换分支：`git checkout <name>`
+4. 创建+切换分支：`git checkout -b <name>`
+5. 合并某分支到当前分支：`git merge <name>`
+6. 删除分支：`git branch -d <name>`
